@@ -64,7 +64,7 @@ int main() {
                             user_aktif = nama;
                             status = daftar_user[i].status;
                             login_berhasil = true;
-                            percobaan_login = 0; // Reset percobaan jika berhasil
+                            percobaan_login = 0; 
                             break;
                         }
                     }
@@ -201,7 +201,6 @@ int main() {
                 cin.get();
             }
             else if (pilihan_utama == 5 && status == "admin") {
-                // Tampilkan daftar ringkas sebelum menghapus
                 cout << "\n--- Daftar Barang Saat Ini ---\n";
                 if (jumlah_produk == 0) {
                     cout << " ( Data Kosong )\n";
